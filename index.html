@@ -4,8 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайтът временно е спрян</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: hsl(20, 100%, 50%);
+            --primary-glow: hsla(20, 100%, 50%, 0.4);
+            --bg-darker: #0c0d0f;
+            --bg-dark: #121418;
+            --text-white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: radial-gradient(circle at 50% 40%, var(--bg-dark), var(--bg-darker));
+            font-family: 'Outfit', sans-serif;
+            text-align: center;
+            padding: 24px;
+        }
+
+        h1 {
+            font-size: clamp(1.5rem, 4vw, 2.75rem);
+            font-weight: 600;
+            color: var(--text-white);
+            letter-spacing: -0.02em;
+            text-shadow: 0 0 40px var(--primary-glow);
+        }
+
+        h1 span {
+            color: var(--primary);
+        }
+    </style>
 </head>
 <body>
-    Сайтът временно е спрян
+    <h1>Сайтът временно <span>е спрян</span></h1>
 </body>
 </html>
